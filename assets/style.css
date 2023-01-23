@@ -637,7 +637,7 @@ img {
     background-color: #deb37e;
 }
 
-.reviews__inner {
+.subscribe__inner {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -724,7 +724,8 @@ img {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 820px;
+    min-height: 820px;
+    height: 100%;
 
     background-color: #7f7770;
 
@@ -749,6 +750,7 @@ img {
 .footer__content {
     max-width: 490px;
     width: 100%;
+    margin: 0 42px 0 0;
 }
 
 .footer__title {
@@ -825,7 +827,11 @@ img {
 }
 
 
-/* Media */
+
+
+/* Media ====================================== */
+
+
 
 @media(max-width: 1290px) {
 
@@ -847,6 +853,25 @@ img {
 
     .promo__text {
         font-size: 24px;
+    }
+
+    /* Footer */
+
+    .footer__inner {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer__content {
+        max-width: 900px;
+        margin: 40px 0;
+
+        text-align: center;
+    }
+
+    .footer__nav {
+        justify-content: space-between;
+        max-width: 780px;
     }
 }
 
@@ -990,6 +1015,12 @@ img {
     .subscribe__input {
         width: 100%;
     }
+
+    /* Footer */
+
+    .footer__column-link {
+        font-size: 22px;
+    }
 }
 
 @media(max-width: 768px) {
@@ -1119,6 +1150,20 @@ img {
     .subscribe__form {
         max-width: 350px;
     }
+
+    /* Footer */
+
+    .footer__inner {
+        margin: 0 25px;
+    }
+
+    .footer__column {
+        margin-right: 20px;
+    }
+
+    .footer__column-link {
+        font-size: 20px;
+    }
 }
 
 @media(max-width: 576px) {
@@ -1222,6 +1267,10 @@ img {
 
     /* Reviews */
 
+    .reviews__items {
+        padding: 0;
+    }
+
     .reviews__mark {
         font-size: 65px;
         line-height: 50px;
@@ -1248,7 +1297,52 @@ img {
     /* Subscribe */
 
     .subscribe {
-        padding-top: 50px;
+        height: 735px;
+        padding-top: 112px;
+    }
+
+    .subscribe__inner {
+        height: 400px;
+    }
+
+    .subscribe__form {
+        max-width: 195px;
+        margin: 60px 80px 0 0;
+    }
+
+    .subscribe__input {
+        height: 48px;
+        padding: 0 39px 0 18px;
+
+        font-size: 19px;
+    }
+
+    .subscribe__btn {
+        width: 119px;
+        height: 49px;
+
+        font-size: 18px;
+
+        top: 2px;
+        right: -86px;
+    }
+
+    /* Footer */
+
+    .footer__content {
+        margin-top: 120px;
+    }
+
+    .footer__nav {
+        justify-content: center;
+        flex-wrap: wrap;
+        margin-bottom: 30px;
+    }
+
+    .footer__column {
+        margin-bottom: 20px;
+
+        text-align: center;
     }
 }
 
